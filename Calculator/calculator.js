@@ -11,20 +11,17 @@ if (isStart = !false) {
  
     //enter object
     let calculator = {
-        firstNum: "",
-        secondNum: "",
+        
         read() { 
         calculator.firstNum = Number(prompt("Введите первое число:"));
         calculator.secondNum = Number(prompt("Введите второе число:"));
         },
-        sum() {this.firstNum + this.secondNum},
-        mul() {this.firstNum * this.secondNum}
+        sum() {return this.firstNum + this.secondNum},
+        mul() {return this.firstNum * this.secondNum}
     };
 
     //answer
     calculator.read();
     alert( calculator.sum() );
     alert( calculator.mul() );
-    console.log(calculator.firstNum);
-    console.log(calculator.secondNum);
 };
